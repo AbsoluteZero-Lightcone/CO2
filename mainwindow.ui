@@ -110,7 +110,7 @@
        <string>参数1：</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="GasCooler_lineEdit_val_1">
+     <widget class="QLineEdit" name="GasCooler_LineEdit_val_1">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -136,7 +136,69 @@
        <string>单位</string>
       </property>
      </widget>
-     <widget class="QSlider" name="GasCooler_horizontalSlider_val_1">
+     <widget class="QSlider" name="GasCooler_Slider_val_1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="GasCooler_val_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>参数1：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="GasCooler_LineEdit_val_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>11</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>10</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>单位</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="GasCooler_Slider_val_3">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -426,7 +488,7 @@
        <string>参数1：</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="Evaporator_lineEdit_val_1">
+     <widget class="QLineEdit" name="Evaporator_LineEdit_val_1">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -449,7 +511,66 @@
        <string>单位</string>
       </property>
      </widget>
-     <widget class="QSlider" name="Evaporator_horizontalSlider_val_1">
+     <widget class="QSlider" name="Evaporator_Slider_val_1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Evaporator_val_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_51">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>参数1：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Evaporator_LineEdit_val_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>11</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_52">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>单位</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="Evaporator_Slider_val_2">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -520,7 +641,7 @@
        <string>参数1：</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="ThrottleValve_lineEdit_val_1">
+     <widget class="QLineEdit" name="ThrottleValve_LineEdit_val_1">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -543,7 +664,66 @@
        <string>单位</string>
       </property>
      </widget>
-     <widget class="QSlider" name="ThrottleValve_horizontalSlider_val_1">
+     <widget class="QSlider" name="ThrottleValve_Slider_val_1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ThrottleValve_val_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_39">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>参数1：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ThrottleValve_LineEdit_val_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>11</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_40">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>单位</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="ThrottleValve_Slider_val_2">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -614,7 +794,7 @@
        <string>参数1：</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="Compressor_lineEdit_val_1">
+     <widget class="QLineEdit" name="Compressor_LineEdit_val_1">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -637,7 +817,7 @@
        <string>单位</string>
       </property>
      </widget>
-     <widget class="QSlider" name="Compressor_horizontalSlider_val_1">
+     <widget class="QSlider" name="Compressor_Slider_val_1">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -673,7 +853,7 @@
        <string>参数1：</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="Compressor_lineEdit_val_2">
+     <widget class="QLineEdit" name="Compressor_LineEdit_val_2">
       <property name="geometry">
        <rect>
         <x>50</x>
