@@ -172,7 +172,7 @@
        <string>参数1：</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="GasCooler_LineEdit_val_3">
+     <widget class="QLineEdit" name="GasCooler_LineEdit_val_2">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -198,7 +198,7 @@
        <string>单位</string>
       </property>
      </widget>
-     <widget class="QSlider" name="GasCooler_Slider_val_3">
+     <widget class="QSlider" name="GasCooler_Slider_val_2">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -876,7 +876,7 @@
        <string>单位</string>
       </property>
      </widget>
-     <widget class="QSlider" name="Compressor_horizontalSlider_val_2">
+     <widget class="QSlider" name="Compressor_Slider_val_2">
       <property name="geometry">
        <rect>
         <x>10</x>

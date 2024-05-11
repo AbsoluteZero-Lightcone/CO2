@@ -17,7 +17,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    void update_param_from_default();
+    void update_param_from_array(int* array);
 private slots:
     void on_pushButton_Default_clicked();
 
