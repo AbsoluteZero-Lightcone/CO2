@@ -119,6 +119,9 @@
         <height>20</height>
        </rect>
       </property>
+      <property name="text">
+       <string>10</string>
+      </property>
      </widget>
      <widget class="QLabel" name="label_14">
       <property name="geometry">
@@ -177,6 +180,9 @@
         <width>41</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="text">
+       <string>10</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_28">
