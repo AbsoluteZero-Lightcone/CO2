@@ -19,7 +19,7 @@ void MainWindow::on_pushButton_Default_clicked()
 {
     int array[param_COUNT]={10,10,10,10,10,10,10,10};
     update_param_from_array(param_val_default);
-    //update_param_from_array(array);
+    update_param_from_array(array);
     //QSlider* ptrSlider = this->findChild<QSlider*>("Compressor_Slider_val_1");
     //ptrSlider->setValue(100);
 
