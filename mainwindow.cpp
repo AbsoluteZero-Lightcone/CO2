@@ -25,7 +25,10 @@ config.zyf:
 # 气体冷却器默认参数
 # 蒸发器默认参数
 */
-
+enum param_config_enum{
+    param_val_1=0,
+    param_count
+};
 void init_param(){
     std::ifstream infile(".\\res\\config.zyf", std::ios::in);
     std::string configline;
@@ -38,9 +41,9 @@ void init_param(){
 
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_pushButton_Default_clicked()
 {
-    init_param();
+    //init_param();
     QMessageBox msgBox;
     msgBox.setIcon(QMessageBox::NoIcon);
     msgBox.setWindowTitle("设置成功");
@@ -49,3 +52,4 @@ void MainWindow::on_pushButton_clicked()
     msgBox.setDefaultButton(QMessageBox::Ok);
     msgBox.exec();
 }
+

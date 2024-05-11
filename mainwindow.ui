@@ -26,7 +26,7 @@
    <string>MainWindow</string>
   </property>
   <property name="windowOpacity">
-   <double>1.000000000000000</double>
+   <double>0.900000000000000</double>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>
@@ -54,7 +54,7 @@
      <string>图 1 CO2跨临界制冷循环理论模型</string>
     </property>
    </widget>
-   <widget class="QFrame" name="devide_frame">
+   <widget class="QFrame" name="devide_frame_GasCooler">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -88,7 +88,7 @@
       <string>气体冷却器</string>
      </property>
     </widget>
-    <widget class="QWidget" name="control_panel_unit_widget_2" native="true">
+    <widget class="QWidget" name="GasCooler_val_1" native="true">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -110,7 +110,7 @@
        <string>参数1：</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_3">
+     <widget class="QLineEdit" name="GasCooler_lineEdit_val_1">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -136,69 +136,7 @@
        <string>单位</string>
       </property>
      </widget>
-     <widget class="QSlider" name="horizontalSlider_3">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>30</y>
-        <width>160</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="control_panel_unit_widget_5" native="true">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>100</y>
-       <width>181</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <widget class="QLabel" name="label_27">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>41</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>参数1：</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_7">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>11</y>
-        <width>41</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>10</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_28">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>10</y>
-        <width>41</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>单位</string>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_7">
+     <widget class="QSlider" name="GasCooler_horizontalSlider_val_1">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -213,7 +151,7 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="widget" native="true">
+   <widget class="QWidget" name="widget_Pipeline_1" native="true">
     <property name="geometry">
      <rect>
       <x>510</x>
@@ -432,7 +370,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QFrame" name="devide_frame_2">
+   <widget class="QFrame" name="devide_frame_Evaporator">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -466,7 +404,7 @@
       <string>蒸发器</string>
      </property>
     </widget>
-    <widget class="QWidget" name="control_panel_unit_widget_8" native="true">
+    <widget class="QWidget" name="Evaporator_val_1" native="true">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -488,7 +426,7 @@
        <string>参数1：</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_10">
+     <widget class="QLineEdit" name="Evaporator_lineEdit_val_1">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -511,66 +449,7 @@
        <string>单位</string>
       </property>
      </widget>
-     <widget class="QSlider" name="horizontalSlider_10">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>30</y>
-        <width>160</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="control_panel_unit_widget_9" native="true">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>100</y>
-       <width>181</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <widget class="QLabel" name="label_35">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>41</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>参数1：</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_11">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>11</y>
-        <width>41</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_36">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>10</y>
-        <width>41</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>单位</string>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_11">
+     <widget class="QSlider" name="Evaporator_horizontalSlider_val_1">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -585,7 +464,7 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QFrame" name="devide_frame_3">
+   <widget class="QFrame" name="devide_frame_ThrottleValve">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -619,7 +498,7 @@
       <string>节流阀</string>
      </property>
     </widget>
-    <widget class="QWidget" name="control_panel_unit_widget_10" native="true">
+    <widget class="QWidget" name="ThrottleValve_val_1" native="true">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -641,7 +520,7 @@
        <string>参数1：</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_12">
+     <widget class="QLineEdit" name="ThrottleValve_lineEdit_val_1">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -664,66 +543,7 @@
        <string>单位</string>
       </property>
      </widget>
-     <widget class="QSlider" name="horizontalSlider_12">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>30</y>
-        <width>160</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="control_panel_unit_widget_11" native="true">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>100</y>
-       <width>181</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <widget class="QLabel" name="label_39">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>41</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>参数1：</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_13">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>11</y>
-        <width>41</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_40">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>10</y>
-        <width>41</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>单位</string>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_13">
+     <widget class="QSlider" name="ThrottleValve_horizontalSlider_val_1">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -738,7 +558,7 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QFrame" name="devide_frame_4">
+   <widget class="QFrame" name="devide_frame_Compressor">
     <property name="geometry">
      <rect>
       <x>550</x>
@@ -772,7 +592,7 @@
       <string>压缩机</string>
      </property>
     </widget>
-    <widget class="QWidget" name="control_panel_unit_widget_12" native="true">
+    <widget class="QWidget" name="Compressor_val_1" native="true">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -794,7 +614,7 @@
        <string>参数1：</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_14">
+     <widget class="QLineEdit" name="Compressor_lineEdit_val_1">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -817,7 +637,7 @@
        <string>单位</string>
       </property>
      </widget>
-     <widget class="QSlider" name="horizontalSlider_14">
+     <widget class="QSlider" name="Compressor_horizontalSlider_val_1">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -831,7 +651,7 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="control_panel_unit_widget_13" native="true">
+    <widget class="QWidget" name="Compressor_val_2" native="true">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -853,7 +673,7 @@
        <string>参数1：</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_15">
+     <widget class="QLineEdit" name="Compressor_lineEdit_val_2">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -876,7 +696,7 @@
        <string>单位</string>
       </property>
      </widget>
-     <widget class="QSlider" name="horizontalSlider_15">
+     <widget class="QSlider" name="Compressor_horizontalSlider_val_2">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -891,7 +711,7 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pushButton_Default">
     <property name="geometry">
      <rect>
       <x>470</x>
@@ -904,7 +724,7 @@
      <string>恢复默认值</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox">
+   <widget class="QCheckBox" name="checkBox_Disturbance">
     <property name="geometry">
      <rect>
       <x>560</x>
@@ -933,7 +753,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QWidget" name="widget_2" native="true">
+   <widget class="QWidget" name="widget_Pipeline_2" native="true">
     <property name="geometry">
      <rect>
       <x>510</x>
@@ -1152,7 +972,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="widget_4" native="true">
+   <widget class="QWidget" name="widget_Pipeline_3" native="true">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -1371,7 +1191,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="widget_3" native="true">
+   <widget class="QWidget" name="widget_Pipeline_4" native="true">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -1590,18 +1410,46 @@
      </property>
     </widget>
    </widget>
+   <widget class="QPushButton" name="pushButton_Save">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>610</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>保存当前配置</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Import">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>610</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>导入配置</string>
+    </property>
+   </widget>
    <zorder>label_5</zorder>
    <zorder>label_6</zorder>
-   <zorder>devide_frame</zorder>
-   <zorder>widget</zorder>
-   <zorder>devide_frame_2</zorder>
-   <zorder>devide_frame_3</zorder>
-   <zorder>devide_frame_4</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>checkBox</zorder>
-   <zorder>widget_2</zorder>
-   <zorder>widget_4</zorder>
-   <zorder>widget_3</zorder>
+   <zorder>devide_frame_GasCooler</zorder>
+   <zorder>widget_Pipeline_1</zorder>
+   <zorder>devide_frame_Evaporator</zorder>
+   <zorder>devide_frame_ThrottleValve</zorder>
+   <zorder>devide_frame_Compressor</zorder>
+   <zorder>pushButton_Default</zorder>
+   <zorder>checkBox_Disturbance</zorder>
+   <zorder>widget_Pipeline_2</zorder>
+   <zorder>widget_Pipeline_3</zorder>
+   <zorder>widget_Pipeline_4</zorder>
+   <zorder>pushButton_Save</zorder>
+   <zorder>pushButton_Import</zorder>
   </widget>
  </widget>
  <resources/>
