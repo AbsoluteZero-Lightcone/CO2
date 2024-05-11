@@ -15,15 +15,37 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+#include <fstream>
+#include <string>
+/*
+config.zyf:
+# 节流阀默认参数
+
+# 压缩机默认参数
+# 气体冷却器默认参数
+# 蒸发器默认参数
+*/
+
+void init_param(){
+    std::ifstream infile(".\\res\\config.zyf", std::ios::in);
+    std::string configline;
+    while(!infile.eof()){
+        infile >> configline;
+        if(configline=="")continue;
+        if(configline.at(0)=='#')continue;
+    };
+
+
+}
 
 void MainWindow::on_pushButton_clicked()
 {
+    init_param();
     QMessageBox msgBox;
-    msgBox.setWindowTitle("QMessageBox");
-    msgBox.setText("The document has been modified.");
-    msgBox.setInformativeText("Do you want to save your changes?");
-    msgBox.setDetailedText("The document may have been modified externally");
-    msgBox.setStandardButtons(QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
-    msgBox.setDefaultButton(QMessageBox::Save);
+    msgBox.setIcon(QMessageBox::NoIcon);
+    msgBox.setWindowTitle("设置成功");
+    msgBox.setText("已经将所有参数恢复至默认值。");
+    msgBox.setStandardButtons(QMessageBox::Ok);
+    msgBox.setDefaultButton(QMessageBox::Ok);
     msgBox.exec();
 }

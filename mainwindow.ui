@@ -235,7 +235,7 @@
       <string>温度</string>
      </property>
     </widget>
-    <widget class="QProgressBar" name="progressBar">
+    <widget class="QProgressBar" name="Pressure_progressBar_1">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -257,7 +257,7 @@
       <string>%vMPa</string>
      </property>
     </widget>
-    <widget class="QProgressBar" name="progressBar_2">
+    <widget class="QProgressBar" name="Temperature_progressBar_1">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -330,7 +330,7 @@
       <string>1号管线状态监视：</string>
      </property>
     </widget>
-    <widget class="QProgressBar" name="progressBar_3">
+    <widget class="QProgressBar" name="Viscosity_progressBar_1">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -362,7 +362,7 @@
       <string>粘度</string>
      </property>
     </widget>
-    <widget class="QProgressBar" name="progressBar_4">
+    <widget class="QProgressBar" name="Density_progressBar_1">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -413,7 +413,7 @@
       <string>状态</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_24">
+    <widget class="QLabel" name="Status_label_1">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -904,6 +904,35 @@
      <string>恢复默认值</string>
     </property>
    </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>610</y>
+      <width>82</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开启扰动</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>170</y>
+      <width>371</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/background.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <widget class="QWidget" name="widget_2" native="true">
     <property name="geometry">
      <rect>
@@ -913,7 +942,7 @@
       <height>201</height>
      </rect>
     </property>
-    <widget class="QLabel" name="label_45">
+    <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -926,7 +955,7 @@
       <string>温度</string>
      </property>
     </widget>
-    <widget class="QProgressBar" name="progressBar_5">
+    <widget class="QProgressBar" name="Pressure_progressBar_2">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -948,7 +977,7 @@
       <string>%vMPa</string>
      </property>
     </widget>
-    <widget class="QProgressBar" name="progressBar_6">
+    <widget class="QProgressBar" name="Temperature_progressBar_2">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -1002,7 +1031,7 @@
       <string>XX MPa ↓ 上限压力</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_46">
+    <widget class="QLabel" name="label_16">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1021,7 +1050,7 @@
       <string>2号管线状态监视：</string>
      </property>
     </widget>
-    <widget class="QProgressBar" name="progressBar_7">
+    <widget class="QProgressBar" name="Viscosity_progressBar_2">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -1040,7 +1069,7 @@
       <string>%vμPa·s</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_47">
+    <widget class="QLabel" name="label_24">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1053,7 +1082,7 @@
       <string>粘度</string>
      </property>
     </widget>
-    <widget class="QProgressBar" name="progressBar_8">
+    <widget class="QProgressBar" name="Density_progressBar_2">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -1078,7 +1107,7 @@
       <string>%vmg/dm³</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_48">
+    <widget class="QLabel" name="label_25">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1091,7 +1120,7 @@
       <string>密度</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_49">
+    <widget class="QLabel" name="label_26">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1104,226 +1133,7 @@
       <string>状态</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_50">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>170</y>
-       <width>131</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>液态/超临界/气态</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="widget_3" native="true">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>390</y>
-      <width>241</width>
-      <height>201</height>
-     </rect>
-    </property>
-    <widget class="QLabel" name="label_58">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>80</y>
-       <width>31</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>温度</string>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar_13">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>50</y>
-       <width>191</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">selection-background-color: rgb(170, 0, 0);</string>
-     </property>
-     <property name="maximum">
-      <number>30</number>
-     </property>
-     <property name="value">
-      <number>25</number>
-     </property>
-     <property name="format">
-      <string>%vMPa</string>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar_14">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>80</y>
-       <width>191</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="minimum">
-      <number>273</number>
-     </property>
-     <property name="maximum">
-      <number>323</number>
-     </property>
-     <property name="value">
-      <number>303</number>
-     </property>
-     <property name="format">
-      <string>%vK</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_59">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>50</y>
-       <width>31</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>压力</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_60">
-     <property name="geometry">
-      <rect>
-       <x>120</x>
-       <y>30</y>
-       <width>111</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::LeftToRight</enum>
-     </property>
-     <property name="text">
-      <string>XX MPa ↓ 上限压力</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_61">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>0</y>
-       <width>211</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>华文细黑</family>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>4号管线状态监视：</string>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar_15">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>110</y>
-       <width>191</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="value">
-      <number>64</number>
-     </property>
-     <property name="format">
-      <string>%vμPa·s</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_62">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>110</y>
-       <width>31</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>粘度</string>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar_16">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>140</y>
-       <width>191</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="minimum">
-      <number>0</number>
-     </property>
-     <property name="maximum">
-      <number>3000</number>
-     </property>
-     <property name="value">
-      <number>1997</number>
-     </property>
-     <property name="format">
-      <string>%vmg/dm³</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_63">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>140</y>
-       <width>31</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>密度</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_64">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>170</y>
-       <width>31</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>状态</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_65">
+    <widget class="QLabel" name="Status_label_2">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -1351,7 +1161,7 @@
       <height>201</height>
      </rect>
     </property>
-    <widget class="QLabel" name="label_66">
+    <widget class="QLabel" name="label_17">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1364,7 +1174,7 @@
       <string>温度</string>
      </property>
     </widget>
-    <widget class="QProgressBar" name="progressBar_17">
+    <widget class="QProgressBar" name="Pressure_progressBar_3">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -1386,7 +1196,7 @@
       <string>%vMPa</string>
      </property>
     </widget>
-    <widget class="QProgressBar" name="progressBar_18">
+    <widget class="QProgressBar" name="Temperature_progressBar_3">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -1411,7 +1221,7 @@
       <string>%vK</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_67">
+    <widget class="QLabel" name="label_18">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1424,7 +1234,7 @@
       <string>压力</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_68">
+    <widget class="QLabel" name="label_19">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -1440,12 +1250,12 @@
       <string>XX MPa ↓ 上限压力</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_69">
+    <widget class="QLabel" name="label_20">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>0</y>
-       <width>211</width>
+       <width>221</width>
        <height>31</height>
       </rect>
      </property>
@@ -1459,7 +1269,7 @@
       <string>3号管线状态监视：</string>
      </property>
     </widget>
-    <widget class="QProgressBar" name="progressBar_19">
+    <widget class="QProgressBar" name="Viscosity_progressBar_3">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -1478,7 +1288,7 @@
       <string>%vμPa·s</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_70">
+    <widget class="QLabel" name="label_29">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1491,7 +1301,7 @@
       <string>粘度</string>
      </property>
     </widget>
-    <widget class="QProgressBar" name="progressBar_20">
+    <widget class="QProgressBar" name="Density_progressBar_3">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -1516,7 +1326,7 @@
       <string>%vmg/dm³</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_71">
+    <widget class="QLabel" name="label_30">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1529,7 +1339,7 @@
       <string>密度</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_72">
+    <widget class="QLabel" name="label_31">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1542,7 +1352,7 @@
       <string>状态</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_73">
+    <widget class="QLabel" name="Status_label_3">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -1561,34 +1371,224 @@
      </property>
     </widget>
    </widget>
-   <widget class="QCheckBox" name="checkBox">
+   <widget class="QWidget" name="widget_3" native="true">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>610</y>
-      <width>82</width>
-      <height>21</height>
+      <x>10</x>
+      <y>390</y>
+      <width>241</width>
+      <height>201</height>
      </rect>
     </property>
-    <property name="text">
-     <string>开启扰动</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>170</y>
-      <width>371</width>
-      <height>251</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/background.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
+    <widget class="QLabel" name="label_32">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>温度</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="Pressure_progressBar_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>50</y>
+       <width>191</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">selection-background-color: rgb(170, 0, 0);</string>
+     </property>
+     <property name="maximum">
+      <number>30</number>
+     </property>
+     <property name="value">
+      <number>25</number>
+     </property>
+     <property name="format">
+      <string>%vMPa</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="Temperature_progressBar_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>80</y>
+       <width>191</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="minimum">
+      <number>273</number>
+     </property>
+     <property name="maximum">
+      <number>323</number>
+     </property>
+     <property name="value">
+      <number>303</number>
+     </property>
+     <property name="format">
+      <string>%vK</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_45">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>压力</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_46">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>30</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>XX MPa ↓ 上限压力</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_47">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文细黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>4号管线状态监视：</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="Viscosity_progressBar_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>110</y>
+       <width>191</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="value">
+      <number>64</number>
+     </property>
+     <property name="format">
+      <string>%vμPa·s</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_48">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>粘度</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="Density_progressBar_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>140</y>
+       <width>191</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>3000</number>
+     </property>
+     <property name="value">
+      <number>1997</number>
+     </property>
+     <property name="format">
+      <string>%vmg/dm³</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_49">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>密度</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_50">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>状态</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Status_label_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>170</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>液态/超临界/气态</string>
+     </property>
+    </widget>
    </widget>
    <zorder>label_5</zorder>
    <zorder>label_6</zorder>
@@ -1598,10 +1598,10 @@
    <zorder>devide_frame_3</zorder>
    <zorder>devide_frame_4</zorder>
    <zorder>pushButton</zorder>
-   <zorder>widget_2</zorder>
-   <zorder>widget_3</zorder>
-   <zorder>widget_4</zorder>
    <zorder>checkBox</zorder>
+   <zorder>widget_2</zorder>
+   <zorder>widget_4</zorder>
+   <zorder>widget_3</zorder>
   </widget>
  </widget>
  <resources/>
