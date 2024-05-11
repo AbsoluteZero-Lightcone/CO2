@@ -12,7 +12,8 @@ SOURCES += \
     load_param.cpp \
     main.cpp \
     mainwindow.cpp \
-    physics_system.cpp
+    physics_system.cpp \
+    sliders.cpp
 
 HEADERS += \
     load_param.h \

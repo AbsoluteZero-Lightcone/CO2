@@ -36,7 +36,7 @@ void MainWindow::on_pushButton_Default_clicked()
         load_default_param_array_from_file();
         //int temp[param_COUNT]={10,10,10,10,10,10,10,10};
         update_param_from_array(param_val_default);
-
+        updateGlobal();
         QMessageBox msgBox;
         msgBox.setIcon(QMessageBox::NoIcon);
         msgBox.setWindowTitle("设置成功");
@@ -46,6 +46,7 @@ void MainWindow::on_pushButton_Default_clicked()
         msgBox.exec();
     }
     catch(QString err){
+        updateGlobal();
         QMessageBox msgBox;
         msgBox.setIcon(QMessageBox::NoIcon);
         msgBox.setWindowTitle("错误");
@@ -55,21 +56,4 @@ void MainWindow::on_pushButton_Default_clicked()
         msgBox.exec();
     }
 }
-
-void MainWindow::on_Compressor_LineEdit_val_1_editingFinished()
-{
-    qDebug("on_Compressor_LineEdit_val_1_editingFinished\n");
-    this->findChild<QSlider*>("Compressor_Slider_val_1")
-        ->setValue(this->findChild<QLineEdit*>("Compressor_LineEdit_val_1")->text().toInt());
-    updateGlobal();
-}
-
-
-void MainWindow::on_Compressor_Slider_val_1_sliderMoved(int position)
-{
-    qDebug("on_Compressor_Slider_val_1_sliderMoved\n");
-    this->findChild<QLineEdit*>("Compressor_LineEdit_val_1")->setText(QString::number(position));
-    updateGlobal();
-}
-
 

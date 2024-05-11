@@ -25,6 +25,8 @@ private slots:
 
     void on_Compressor_LineEdit_val_1_editingFinished();
     void on_Compressor_Slider_val_1_sliderMoved(int position);
+    void on_Compressor_LineEdit_val_2_editingFinished();
+    void on_Compressor_Slider_val_2_sliderMoved(int position);
 
 
 private:

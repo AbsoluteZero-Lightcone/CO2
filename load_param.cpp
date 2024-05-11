@@ -54,11 +54,11 @@ config.zyf:
     ...
 */
 void load_default_param_array_from_file(){
-    for(int i = 0 ; i < param_COUNT; i++){
-        param_val_default[i] = -1;
-    }
     QFile file(QApplication::applicationDirPath()+"/"+DEFAULT_CONFIG_FILE);
     if(file.exists()){
+        for(int i = 0 ; i < param_COUNT; i++){
+            param_val_default[i] = -1;
+        }
         if(file.open(QIODevice::ReadOnly|QIODevice::Text)){
             QTextStream infile(&file);
             QString configline;
@@ -73,29 +73,34 @@ void load_default_param_array_from_file(){
                 param_val_default[index] = val;
             }
         }
+        for(int i = 0 ; i < param_COUNT; i++)
+            if(param_val_default[i] == -1){
+                for(i = 0 ; i < param_COUNT; i++){
+                    param_val_default[i] = 0;
+                }
+                throw QString("程序初始化失败，配置信息不完整");
+            }
     }
     else{
         file.open(QIODevice::ReadWrite|QIODevice::Text);
         QTextStream outfile(&file);
         outfile <<"# 压缩机参数"<<"\n";
-        outfile <<"param_Compressor_val_1 "<<10<<"\n";
-        outfile <<"param_Compressor_val_2 "<<10<<"\n";
+        outfile <<"param_Compressor_val_1 "<<0<<"\n";
+        outfile <<"param_Compressor_val_2 "<<0<<"\n";
         outfile <<"# 蒸发器参数"<<"\n";
-        outfile <<"param_Evaporator_val_1 "<<10<<"\n";
-        outfile <<"param_Evaporator_val_2 "<<10<<"\n";
+        outfile <<"param_Evaporator_val_1 "<<0<<"\n";
+        outfile <<"param_Evaporator_val_2 "<<0<<"\n";
         outfile <<"# 气体冷却器参数"<<"\n";
-        outfile <<"param_GasCooler_val_1 "<<10<<"\n";
-        outfile <<"param_GasCooler_val_2 "<<10<<"\n";
+        outfile <<"param_GasCooler_val_1 "<<0<<"\n";
+        outfile <<"param_GasCooler_val_2 "<<0<<"\n";
         outfile <<"# 节流阀参数"<<"\n";
-        outfile <<"param_ThrottleValve_val_1 "<<10<<"\n";
-        outfile <<"param_ThrottleValve_val_2 "<<10<<"\n";
+        outfile <<"param_ThrottleValve_val_1 "<<0<<"\n";
+        outfile <<"param_ThrottleValve_val_2 "<<0<<"\n";
         file.close();
         throw QString("程序初始化失败，未找到配置信息，但已在")+QString(QApplication::applicationDirPath()+"/"+DEFAULT_CONFIG_FILE)+QString("创建空配置文件");
     }
 
-    for(int i = 0 ; i < param_COUNT; i++)
-        if(param_val_default[i] == -1)
-            throw QString("程序初始化失败，配置信息不完整");
+
 }
 /*
 void load_default_param_array_from_file(){
