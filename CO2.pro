@@ -11,11 +11,13 @@ CONFIG += c++17
 SOURCES += \
     load_param.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    physics_system.cpp
 
 HEADERS += \
     load_param.h \
-    mainwindow.h
+    mainwindow.h \
+    physics_system.h
 
 FORMS += \
     mainwindow.ui

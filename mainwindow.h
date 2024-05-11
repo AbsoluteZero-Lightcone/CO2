@@ -18,8 +18,14 @@ public:
     ~MainWindow();
 
     void update_param_from_array(int* array);
+
+    void updateGlobal();
 private slots:
     void on_pushButton_Default_clicked();
+
+    void on_Compressor_LineEdit_val_1_editingFinished();
+    void on_Compressor_Slider_val_1_sliderMoved(int position);
+
 
 private:
     Ui::MainWindow *ui;
