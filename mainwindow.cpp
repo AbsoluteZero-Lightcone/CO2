@@ -8,6 +8,20 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    //QMessageBox::warning(this,"Debug:",QApplication::applicationDirPath()+"/"+DEFAULT_CONFIG_FILE);
+    try{
+        load_default_param_array_from_file();
+        update_param_from_array(param_val_default);
+    }
+    catch(QString err){
+        QMessageBox msgBox;
+        msgBox.setIcon(QMessageBox::NoIcon);
+        msgBox.setWindowTitle("错误");
+        msgBox.setText(err);
+        msgBox.setStandardButtons(QMessageBox::Abort);
+        msgBox.setDefaultButton(QMessageBox::Abort);
+        msgBox.exec();
+    }
 }
 
 MainWindow::~MainWindow()
@@ -17,17 +31,26 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_Default_clicked()
 {
-    int array[param_COUNT]={10,10,10,10,10,10,10,10};
-    update_param_from_array(param_val_default);
-    update_param_from_array(array);
-    //QSlider* ptrSlider = this->findChild<QSlider*>("Compressor_Slider_val_1");
-    //ptrSlider->setValue(100);
+    try{
+        load_default_param_array_from_file();
+        //int temp[param_COUNT]={10,10,10,10,10,10,10,10};
+        update_param_from_array(param_val_default);
 
-    QMessageBox msgBox;
-    msgBox.setIcon(QMessageBox::NoIcon);
-    msgBox.setWindowTitle("设置成功");
-    msgBox.setText("已经将所有参数恢复至默认值。");
-    msgBox.setStandardButtons(QMessageBox::Ok);
-    msgBox.setDefaultButton(QMessageBox::Ok);
-    msgBox.exec();
+        QMessageBox msgBox;
+        msgBox.setIcon(QMessageBox::NoIcon);
+        msgBox.setWindowTitle("设置成功");
+        msgBox.setText("已经将所有参数设置为默认值。");
+        msgBox.setStandardButtons(QMessageBox::Ok);
+        msgBox.setDefaultButton(QMessageBox::Ok);
+        msgBox.exec();
+    }
+    catch(QString err){
+        QMessageBox msgBox;
+        msgBox.setIcon(QMessageBox::NoIcon);
+        msgBox.setWindowTitle("错误");
+        msgBox.setText(err);
+        msgBox.setStandardButtons(QMessageBox::Abort);
+        msgBox.setDefaultButton(QMessageBox::Abort);
+        msgBox.exec();
+    }
 }
